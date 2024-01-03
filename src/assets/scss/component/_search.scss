@@ -1,0 +1,23 @@
+.search {
+    display: flex;
+    padding: 0 5px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid $grey;
+    background: $grey2;
+
+    &__button {
+        // background: url('/assets/images/btn_search.png') no-repeat center;
+        @include bg('btn_search.png', center);
+        width: 46px;
+        height: 46px;
+        border-radius: 100%;
+    }
+    input {
+        width: 345px;
+        height: 46px;
+        border-radius: 46px;
+        background: $grey2;
+    }
+
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+input,
+textarea {
+  border: 0 none;
+}
+input[type="date"] {
+  position: relative;
+  width: 100px;
+}
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+input[type="date"]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+}
+input[type="date"]:valid::before {
+  display: none;
+}
+/* IE의 경우 */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+/* 크롬의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+body.noscroll {
+  overflow-y: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+main,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+i {
+  font-style: normal;
+}
+/* a 링크 초기화 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+}
+/* 폰트 초기화 */
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", dotum, "돋움",
+    sans-serif;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* table 초기화 */
+table {
+  padding: 0;
+  border: 0;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0;
+}
+/* 폰트 스타일 초기화 */
+em,
+address {
+  font-style: normal;
+}
+/* 블릿기호 초기화 */
+ul,
+li,
+ol {
+  list-style: none;
+}
+/* 제목 태그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: inherit;
+}
+/* 테두리 초기화 */
+img,
+fieldset {
+  border: 0 none;
+}
+/* 버튼 초기화 */
+button {
+  border: 0;
+}
+img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+main {
+  margin-top: 96px;
+  transition: margin-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+main.hide-banner {
+  margin-top: 96px;
+}
+/* clearfix */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide {
+  @include hide;
+}

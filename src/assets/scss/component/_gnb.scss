@@ -1,0 +1,11 @@
+.gnb {
+    ul {
+        display: flex;
+        gap: 30px;
+    }
+    a {
+        font-size: 20px;
+        color: $grey28;
+        white-space: nowrap;
+    }
+}
