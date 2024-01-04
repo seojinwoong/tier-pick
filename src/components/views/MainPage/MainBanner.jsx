@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"; 
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const MainBanner = () => {
   const paginationPC = {
     clickable: true,
@@ -14,8 +14,9 @@ const MainBanner = () => {
         slidesPerView={1} 
         pagination={paginationPC} 
         loop={true} 
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         navigation={true} 
-        modules={[Pagination, Navigation]} 
+        modules={[Autoplay, Pagination, Navigation]} 
         className='bannerSwiper'
       >
         <SwiperSlide className="bannerSwiper__inner bannerSwiper__01"><div><span className="hide">신규회원 3천원 할인 앱 설치하면 4천원 더 타이어는 역시 타이어픽</span></div> </SwiperSlide>

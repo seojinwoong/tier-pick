@@ -13,8 +13,18 @@
 }
 
 // Responsive
-@mixin mobile {
+@mixin pc {
     @media (min-width: 0px) and (max-width: $web) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (min-width: 0px) and (max-width: $tablet) {
+        @content;
+    }
+}
+@mixin miniMobile {
+    @media (min-width: 0px) and (max-width: $mobile) {
         @content;
     }
 }
@@ -31,7 +41,7 @@
     overflow: hidden;
     display: block;
     position: absolute;
-    border: 0;
+    border: 0;  
     width: 1px;
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);

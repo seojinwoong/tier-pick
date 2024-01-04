@@ -1,13 +1,16 @@
-import Header from "./components/Header";
-import MainBanner from "./components/MainBanner";
+import { Route, Routes } from 'react-router-dom';
 import './assets/scss/style.scss'
+import Header from "./components/common/Header";
+import MainPage from './components/views/MainPage/MainPage';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <MainBanner />
-    </div>
+      <>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<MainPage />}></Route>
+        </Routes>
+      </>
   )
 }
 

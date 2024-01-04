@@ -1,0 +1,21 @@
+.only-mobile {
+  display: none;
+  @include mobile{
+    display: block;
+  }
+}
+
+.center-container {
+  width: 1184px;
+  margin: 0 auto;
+  @include pc {
+      width: 100%;
+  }
+}
+
+.row {
+  @include pc {
+    padding: 0 8px;
+  }
+}
+

@@ -1,0 +1,14 @@
+[
+    {
+        "rank": 1,
+        "tierCompany": "금호",
+        "tierName": "크루젠 HP71",
+        "tierCode": "235/55R19",
+        "discountPercent": "49%",
+        "tierPrice": "120,000",
+        "rating": 4.7,  
+        "reviewCount": "2,704",
+        "category": ["사계절용", "SUV", "고급형"],
+        "companyImgSrc": ""
+    }
+  ]
